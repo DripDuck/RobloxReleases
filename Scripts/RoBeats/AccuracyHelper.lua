@@ -31,7 +31,7 @@ for index, module in next, getloadedmodules() do
                             local realNoteResult = oldGetNoteResult(...)
                             
                             if realNoteResult == okayNoteResult then
-                                return greatNoteResult
+                                return perfectNoteResult
                             elseif realNoteResult == greatNoteResult then
                                 return perfectNoteResult
                             end
