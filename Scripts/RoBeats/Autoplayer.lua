@@ -1,6 +1,6 @@
 -- this is the lua version of the external autoplayer made by my friend and i (https://github.com/ViperTools/RoBeats-External-Autoplayer)
 
-local keys = shared.keys or {"A", "S", "D", "F"} -- MAKE THIS YOUR ROBEATS KEYBINDS FROM LEFT TO RIGHT, OR SET IN SHARED.KEYS
+local keys = shared.keys or {"1", "2", "3", "4"} -- MAKE THIS YOUR ROBEATS KEYBINDS FROM LEFT TO RIGHT, OR SET IN SHARED.KEYS
 
 local VirtualInputManager = game:GetService("VirtualInputManager")
 local camera = workspace.CurrentCamera
@@ -8,7 +8,7 @@ local camera = workspace.CurrentCamera
 local Autoplayer = {
     noteY = 3879,
     sliderY = 3878,
-    laneDistanceThreshold = 25,
+    laneDistanceThreshold = 1000,
     distanceLowerBound = 0.2,
     distanceUpperBound = 0.8,
     delayLowerBound = 0.03,
