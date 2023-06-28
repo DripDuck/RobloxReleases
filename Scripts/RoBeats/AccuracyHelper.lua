@@ -30,9 +30,9 @@ for index, module in next, getloadedmodules() do
                         moduleValue[functionName] = function(...)
                             local realNoteResult = oldGetNoteResult(...)
                             
-                            if realNoteResult == okayNoteResult then
+                            if realNoteResult == missNoteResult then
                                 return perfectNoteResult
-                            elseif realNoteResult == greatNoteResult then
+                            elseif realNoteResult == missNoteResult then
                                 return perfectNoteResult
                             end
                             
